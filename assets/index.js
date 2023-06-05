@@ -11,10 +11,10 @@ newTaskButton.addEventListener('click', () => {
 
     // Создаем контейнер для списка задач
     let taskContainer = document.createElement("div");
-    taskContainer.createElement.add("task_container");
+    taskContainer.classList.add("task_container");
 
     // Добавляем задачу пользователя из input
-    if (newTask.value.length < 0) {
+    if (newTask.value.length > 0) {
         taskContainer.innerHTML = `
         <input type="checkbox" id="checkbox_task" disabled>
             <span class="task_add">${newTask}</span>`;
