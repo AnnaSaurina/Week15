@@ -7,7 +7,7 @@ let clearTaskButton = document.querySelector('.clear_task_button');
 // Добавляем обработчик событий для добавления новых задач
 newTaskButton.addEventListener('click', () => {
     // В новую переменную получаем данные из input
-    let = newTaskText = document.querySelector('.new_task').value; 
+    let newTaskText = newTask.value; 
 
     // Создаем контейнер для списка задач
     let taskContainer = document.createElement("div");
